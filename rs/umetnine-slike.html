@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="../js/umetnine/umetnine-slike.js"></script>
+    <title>GALERIJA</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="row justify-content-center mb-5 mt-5"><img src="../images/logo.png" alt="LOGO" srcset="" width="200px"></div>
+        <div class="row nav-menu">
+            <div class="col-sm-2 nav-brand-name">
+                <span>GALERIJA</span>
+                <span>UMETNINA</span>
+            </div>
+            <div class="col-sm-10">
+                <nav class="navbar navbar-expand-lg justify-content-center">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        Meni<span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto" >
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link active">Početna</a>
+                        </li>
+
+                        <li class="nav-item dropdown" >
+                            <a href="rs/umetnine.html" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Umetnine</a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Slike</a>
+                                <a class="dropdown-item" href="umetnine-skulpture.html">Skulpture</a>
+                                <a class="dropdown-item" href="umetnine-ostalo.html">Ostale umetnine</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a href="umetnici.html" class="nav-link active">Umetnici</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="moj-nalog.html" class="nav-link active">Moj nalog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="o-nama.html" class="nav-link">O nama</a>
+                        </li>
+                        <li class="nav-item dropdown" >
+                            <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Jezik</a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                                <a id="sr" class="dropdown-item" href="#">Srpski</a>
+                                <a id="en" class="dropdown-item" href="../en/umetnine-slike.html">English</a>
+                            </div>
+                        </li>
+
+                    </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item"><a href="index.html">Početna</a></li>
+                      <li class="breadcrumb-item active" aria-current="page">Umetnine</li>
+                      <li class="breadcrumb-item active" aria-current="page">Slike</li>                      
+                    </ol>
+                </nav>
+            </div>
+        </div> 
+    </div>  
+
+    <!--content-->  
+    <div class="container">
+        
+        <div class="row mt-5">
+            <!--search form-->
+            <div class="col sm-2"></div>
+            <div class="col-sm-8 justify-content-center">
+                <div class="form-inline">
+                    <div class="form-group">
+                      <label for="sortSelect">Sortiraj po:</label>
+                      <select class="form-control ml-3" id="sortSelectImages">
+                          <option value="asc">Nazivu rastuce</option>
+                          <option value="desc">Nazivu opadajuce</option>
+                      </select>
+                      
+                      <button class="btn btn-dark my-2 my-sm-0 ml-3" id="imagesOrder">Sortiraj</button>
+                      <input class="form-control mr-sm-2 ml-3" type="search" placeholder="Pretrazi umetnine" aria-label="Search" id="imagesSearch">
+                  
+                    </div>
+                </div>
+
+            </div>
+            <div class="col sm-2"></div>
+        </div>
+
+        <div class="row mt-5" id="umetnine-slike">
+        </div>
+
+
+    </div>
+
+    <div class="container">
+        <!--footer-->
+        <div class="row mt-5">
+            <div class="col-sm">
+                <footer style="background-color: whitesmoke;">
+
+                    <div class="text-center">Copyright 2023, Bogdan Mihajlović, 
+                        Odsek za softversko inženjersvo Elektrotehničkog fakulteta
+                        Univerziteta u Beogradu</div>
+                </footer>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

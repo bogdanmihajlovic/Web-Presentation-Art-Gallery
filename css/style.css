@@ -1,0 +1,51 @@
+.nav-menu{
+  background-color: whitesmoke;
+}
+.nav-brand-name{
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 16px;
+  padding-right:15;
+  letter-spacing: 0.084em;
+  font-weight: 600;
+}
+.nav-link{
+  color: black;
+}
+.nav-link:hover{
+  color: black;
+}
+
+.nav-item:hover{
+  color:brown;
+}
+
+.breadcrumb{
+  background-color: white;
+}​​​​​​​​​​​​​
+
+.map-container-2{
+  overflow:hidden;
+  padding-bottom:56.25%;
+  position:relative;
+  height:0;
+}
+.map-container-2 iframe{
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
+}
+
+.award{
+  color: black;
+}
+.award:hover{
+  color : black;
+}
+
+.carousel-item img {
+  height: 1000px; /* Adjust the height as needed */
+  object-fit: cover; /* Maintain aspect ratio and cover the entire container */
+}
